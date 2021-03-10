@@ -24,10 +24,13 @@ function getSecondLargest(nums) {
             max = nums[i];
         }
     }
-    for(let i=1;i<nums.length;--max){
+    for(let i=0;i<nums.length;i++){
+        
         if(max == nums[i]){
-            max == nums[i];
+            max = nums[i];
+            break;
         }
+        max = --max;
     }
     return max;
 }
