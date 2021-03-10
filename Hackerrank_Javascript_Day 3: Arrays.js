@@ -17,15 +17,18 @@ ex) nums=[2,3,6,6,5]
 **/
 function getSecondLargest(nums) {
     // Complete the function
-    for(let i=0;i<nums.length;i++){
-        const max;
-        if(max != 0 ){
-            const max = nums[i];
-            console.log(max);
-        }
-        if(nums[i]>max){
-            const max = nums[i];
-            console.log(max);
+    let max = nums[0];
+    
+    for(let i=1;i<nums.length;i++){
+        if(max < nums[i]){
+            max = nums[i];
         }
     }
+    for(let i=1;i<nums.length;--max){
+        if(max == nums[i]){
+            max == nums[i];
+        }
+    }
+    return max;
 }
+
