@@ -18,20 +18,26 @@ ex) nums=[2,3,6,6,5]
 function getSecondLargest(nums) {
     // Complete the function
     let max = nums[0];
+    let secondmax = nums[0];
     
     for(let i=1;i<nums.length;i++){
         if(max < nums[i]){
             max = nums[i];
         }
     }
-    for(let i=0;i<nums.length;i++){
+    for(let i=0;;i++){
         
-        if(max == nums[i]){
+        if(nums[i] == max){
             max = nums[i];
             break;
+        }else if(i>nums.length){
+            --i;
+        }else if(i<0){
+            i++
         }
-        max = --max;
+        
     }
     return max;
 }
+
 
