@@ -1,5 +1,8 @@
 /*
 ex) nums=[2,3,6,6,5]
+** Create a variable max
+** Create a variable secondmax
+
 1. 첫번째 두번째 수 비교 큰수 n=x
 2. n 값 세번째 수 비교 큰수 n=x
 3. n 값 네번째 수 비교 큰수 n=x
